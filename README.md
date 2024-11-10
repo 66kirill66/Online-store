@@ -11,5 +11,21 @@
 
  option three -  Run a local server from any other application in the build folder (For example : "Online Shop folder").
 
+### Code Structure and Design
+
+- **Scripts Folder**: Contains the main scripts of the project, including `DataFetcher` for loading data from the server, `ProductUIManager` for managing product data editing.
+- **DataFetcher**: Class responsible for receiving JSON data from the server and dynamically creating objects on the scene.
+- **ProductUIManager**: Manages the product data editing interface, including displaying and saving changes.
 
 
+### Libraries and assets used
+
+- **System.Collections / System.Collections.Generic**: Used to work with collections (e.g. `List<Product>`) in the project.
+- **UnityEngine**: The core Unity namespace, providing access to components, scenes, and objects in the scene.
+- **UnityEngine.Networking**: Used to interact with the server and load data via `UnityWebRequest`.
+- **System**: Hooks up the core C# classes, including basic types and date operations.
+- **System.Linq**: Provides LINQ for easy manipulation of collections, which helps with filtering and processing data.
+- **TMPro (TextMeshPro)**: Used to render high-quality text in the UI, including `TMP_InputField` for editing text.
+- **UnityEngine.SceneManagement**: Used for scene management, allowing scenes to be loaded and reloaded in the game.
+- **System.Runtime.InteropServices**: Enables support for calling platform-specific APIs and for interacting with JavaScript in WebGL.
+- **All assets**: Brief description of usage, where it is taken from "free3d" -  https://free3d.com/. 
