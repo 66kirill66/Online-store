@@ -5,7 +5,6 @@ using UnityEngine.Networking;
 using System;
 using System.Linq;
 using TMPro;
-using UnityEngine.SceneManagement;
 using System.Runtime.InteropServices;
 
 
@@ -46,14 +45,6 @@ public class DataFetcher : MonoBehaviour
         StartCoroutine(FetchProducts());
     }
 
-
-    private void FixedUpdate()
-    {
-        if (Input.GetKey(KeyCode.R))
-        {
-            SceneManager.LoadScene(0);
-        }
-    }
 
     public void SendNewJsonToServer()
     {
